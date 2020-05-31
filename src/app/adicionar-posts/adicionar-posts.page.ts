@@ -6,10 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./adicionar-posts.page.scss'],
 })
 export class AdicionarPostsPage implements OnInit {
-
+  
   constructor() { }
 
+  form = {
+    userId: '',
+    id: '',
+    title: '',
+    body: ''
+  }
+
   ngOnInit() {
+  }
+
+  AddPost(form) {
+    console.log(form.value);
   }
 
 }
